@@ -72,12 +72,12 @@ section above][8]).
 ## Cloning the Project
 
 First, you will want to clone the repository to
-`$GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere`:
+`$GOPATH/src/github.com/Oxalide/terraform-provider-vsphere`:
 
 ```sh
-mkdir -p $GOPATH/src/github.com/terraform-providers
-cd $GOPATH/src/github.com/terraform-providers
-git clone git@github.com:terraform-providers/terraform-provider-vsphere
+mkdir -p $GOPATH/src/github.com/Oxalide
+cd $GOPATH/src/github.com/Oxalide
+git clone git@github.com:Oxalide/terraform-provider-vsphere
 ```
 
 ## Running the Build
@@ -86,7 +86,7 @@ After the clone has been completed, you can enter the provider directory and
 build the provider.
 
 ```sh
-cd $GOPATH/src/github.com/terraform-providers/terraform-provider-vsphere
+cd $GOPATH/src/github.com/Oxalide/terraform-provider-vsphere
 make build
 ```
 
