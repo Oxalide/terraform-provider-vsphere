@@ -129,6 +129,9 @@ func resourceVSphereVirtualMachine() *schema.Resource {
 		Read:   resourceVSphereVirtualMachineRead,
 		Update: resourceVSphereVirtualMachineUpdate,
 		Delete: resourceVSphereVirtualMachineDelete,
+		Importer: &schema.ResourceImporter{
+			State: schema.ImportStatePassthrough,
+		},
 
 		SchemaVersion: 1,
 		MigrateState:  resourceVSphereVirtualMachineMigrateState,
