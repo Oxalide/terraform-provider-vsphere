@@ -46,6 +46,9 @@ func resourceVSphereHostVirtualSwitch() *schema.Resource {
 		Read:   resourceVSphereHostVirtualSwitchRead,
 		Update: resourceVSphereHostVirtualSwitchUpdate,
 		Delete: resourceVSphereHostVirtualSwitchDelete,
+		Importer: &schema.ResourceImporter{
+			State: schema.ImportStatePassthrough,
+		},
 		Schema: s,
 	}
 }
